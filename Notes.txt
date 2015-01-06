@@ -1,0 +1,20 @@
+There are 7 primary musical notes: C4, D4, E4, F4, G4, A4, B4
+These 7 are called the major scale
+General info: http://en.wikipedia.org/wiki/Note
+all Hz frequencies: http://www.phy.mtu.edu/~suits/notefreqs.html
+
+Can use 5 primary notes C4, D4, E4, G4, A4
+these 5 are the http://en.wikipedia.org/wiki/Pentatonic_scale
+
+LilyPond is a text-based music engraver; it is more similar to a programming language than a graphical score editing program. http://www.lilypond.org/website/windows.html
+in LilyPod the pentatonic major scale is
+<score vorbis="1">\relative c' { \time 5/4 c d e g a }</score>
+
+Unity3D
+pitch modification: http://answers.unity3d.com/questions/127562/pitch-in-unity.html
+create audio: http://answers.unity3d.com/questions/446162/how-exactly-does-audioclipcreate-work.html
+
+chord detection: http://www.kaappine.fi/tutorials/fundamental-frequencies-and-detecting-notes/
+
+notes to put in scripts:
+for the screen orientation toggle button: http://docs.unity3d.com/Manual/script-Toggle.html
