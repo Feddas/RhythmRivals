@@ -5,6 +5,7 @@ using System.Collections;
 public class Globals : MonoBehaviour
 {
     public Camera MainCamera;
+    public UnityEngine.UI.Text DebugText;
     public delegate void OrientationChange();
     public static event OrientationChange OnOrientationChange;
     
@@ -29,6 +30,8 @@ public class Globals : MonoBehaviour
         if (instance == null)
             Instance = this;
         Debug.Log("awake " + Instance.ToString());
+
+        DebugText.text = "globals connected";
     }
 
     void Update()

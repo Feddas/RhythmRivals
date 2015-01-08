@@ -5,7 +5,7 @@ public class ScreenOrientation : MonoBehaviour
 {
     // track device moved from portrait to landscape event.
     static bool RotationLocked;
-    static int LastWidth;
+    static float LastAspect;
 
     void Start()
     {
@@ -15,11 +15,11 @@ public class ScreenOrientation : MonoBehaviour
     void Update()
     {
         // raise device moved from portrait to landscape event.
-        if (RotationLocked == false && Screen.width != LastWidth)
+        if (RotationLocked == false && Globals.Instance.MainCamera.aspect != LastAspect) // Note :MainCamera changes after Screen.width value
         {
-            LastWidth = Screen.width;
+            LastAspect = Globals.Instance.MainCamera.aspect;
             Globals.RaiseOrientationChangeEvent();
-            Debug.Log("asdflocked to " + Screen.orientation.ToString());
+            Debug.Log("orientation to " + Screen.orientation.ToString() + " aspect " + Globals.Instance.MainCamera.aspect);
         }
     }
 

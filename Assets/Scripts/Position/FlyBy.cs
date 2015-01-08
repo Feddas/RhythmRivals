@@ -5,22 +5,25 @@ public class FlyBy : MonoBehaviour
 {
     public float Speed = 20;
 
+    Transform cachedTransform;
     Vector3 cachedPosition;
 
     void Start()
     {
-        cachedPosition = this.transform.position;
+        cachedTransform = this.transform;
     }
 
     void Update()
     {
-        if (this.transform.position.z > 0)
+        cachedPosition = cachedTransform.position;
+        if (cachedPosition.z > 0)
         {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - Speed * Time.deltaTime);
+            cachedPosition = new Vector3(cachedPosition.x, cachedPosition.y, cachedPosition.z - Speed * Time.deltaTime);
         }
         else
         {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 200);
+            cachedPosition = new Vector3(cachedPosition.x, cachedPosition.y, 200);
         }
+        cachedTransform.position = cachedPosition;
     }
 }

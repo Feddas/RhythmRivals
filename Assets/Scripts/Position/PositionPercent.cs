@@ -18,15 +18,12 @@ public class PositionPercent : MonoBehaviour
 
     void Start()
     {
-#if !UNITY_EDITOR
-        position();
-#endif
     }
 
     void Update()
     {
 #if UNITY_EDITOR // provide live updating to the object
-        position();
+       // position();
 #endif
     }
 
@@ -43,7 +40,13 @@ public class PositionPercent : MonoBehaviour
             newPos.z = this.transform.position.z;
 
             this.transform.position = newPos;
-           // Debug.Log(PercentX + "+" + PercentY + " used to set to (" + newPos.x + ", " + newPos.y + ", " + newPos.z);
+
+            //debug
+            string current = " Size (" + Screen.width + ", " + Screen.height + ") " + PercentX + "+" + PercentY,
+                applied = " used to set to (" + newPos.x + ", " + newPos.y + ", " + newPos.z;
+            //Debug.Log(current + applied);
+
+            Globals.Instance.DebugText.text = "Positioned for aspect " + Globals.Instance.MainCamera.aspect + current + applied;
         }
         else
         {
