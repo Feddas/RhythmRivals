@@ -27,6 +27,7 @@ public class ScreenOrientation : MonoBehaviour
     {
         RotationLocked = isOrientationLocked;
 
+        // this should be all that's needed to toggle orientation lock
         if (isOrientationLocked)
         {
             Screen.orientation = currentOrientation();
@@ -36,7 +37,13 @@ public class ScreenOrientation : MonoBehaviour
             Screen.orientation = UnityEngine.ScreenOrientation.AutoRotation;
         }
 
-        Debug.Log("RotationLocked to " + RotationLocked);
+        // but adding this fixes some Nexus 5 orientation issues.
+        Screen.autorotateToLandscapeLeft =
+        Screen.autorotateToLandscapeRight =
+        Screen.autorotateToPortrait =
+        Screen.autorotateToPortraitUpsideDown = isOrientationLocked == false;
+
+        Debug.Log("RotationLocked " + RotationLocked + " to " + Screen.orientation);
     }
 
     UnityEngine.ScreenOrientation currentOrientation()

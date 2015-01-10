@@ -13,4 +13,5 @@
 /[Oo]bj/*
 *.DotSettings
 
+/Temp/
 /Assets/AssetStore/UnityVS*
