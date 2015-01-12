@@ -1,0 +1,152 @@
+parsed by:http://phpmidiparser.com/reports/1388/
+---- FILE START ----
+  ---- FILE HEADER ----
+    format:        1
+    tracks:        2
+    time division: 256
+  ---- TRACK 1 (26 bytes) ----
+    delta: 0
+    Time Signature: 4/4, metronome pulses every 24 clock ticks, 8 32nd notes per quarter note
+    delta: 0
+    Key Signature: C Major
+    delta: 768
+    Set Tempo: 120 BPM
+    delta: 1
+    End of Track: 
+  ---- TRACK 2 (305 bytes) ----
+    delta: 768
+    Program Change (channel 0): Concert Grand
+    delta: 0
+    Controller (channel 0): Mode Message #1 value [0]
+    delta: 0
+    Controller (channel 0): Damper Pedal value [0]
+    delta: 0
+    Controller (channel 0): Effects Depth #1 value [48]
+    delta: 0
+    Controller (channel 0): Pan value [51]
+    delta: 0
+    Controller (channel 0): Main Volume value [100]
+    delta: 0
+    Track Name: Piano
+    delta: 0
+    Note On (channel 0): C4 with velocity 72
+    delta: 128
+    Note Off (channel 0): C4 with velocity 0
+    delta: 26
+    Note On (channel 0): D4 with velocity 77
+    delta: 102
+    Note Off (channel 0): D4 with velocity 0
+    delta: 0
+    Note On (channel 0): E4 with velocity 89
+    delta: 256
+    Note Off (channel 0): E4 with velocity 0
+    delta: 0
+    Note On (channel 0): G4 with velocity 86
+    delta: 256
+    Note Off (channel 0): G4 with velocity 0
+    delta: 0
+    Note On (channel 0): G4 with velocity 80
+    delta: 256
+    Note Off (channel 0): G4 with velocity 0
+    delta: 0
+    Note On (channel 0): A4 with velocity 87
+    delta: 256
+    Note Off (channel 0): A4 with velocity 0
+    delta: 0
+    Note On (channel 0): G4 with velocity 77
+    delta: 256
+    Note Off (channel 0): G4 with velocity 0
+    delta: 0
+    Note On (channel 0): E4 with velocity 75
+    delta: 256
+    Note Off (channel 0): E4 with velocity 0
+    delta: 0
+    Note On (channel 0): C4 with velocity 70
+    delta: 256
+    Note Off (channel 0): C4 with velocity 0
+    delta: 0
+    Note On (channel 0): D4 with velocity 82
+    delta: 256
+    Note Off (channel 0): D4 with velocity 0
+    delta: 0
+    Note On (channel 0): E4 with velocity 84
+    delta: 256
+    Note Off (channel 0): E4 with velocity 0
+    delta: 0
+    Note On (channel 0): E4 with velocity 79
+    delta: 256
+    Note Off (channel 0): E4 with velocity 0
+    delta: 0
+    Note On (channel 0): D4 with velocity 74
+    delta: 256
+    Note Off (channel 0): D4 with velocity 0
+    delta: 0
+    Note On (channel 0): C4 with velocity 74
+    delta: 256
+    Note Off (channel 0): C4 with velocity 0
+    delta: 0
+    Note On (channel 0): D4 with velocity 83
+    delta: 768
+    Note Off (channel 0): D4 with velocity 0
+    delta: 0
+    Note On (channel 0): C4 with velocity 73
+    delta: 128
+    Note Off (channel 0): C4 with velocity 0
+    delta: 26
+    Note On (channel 0): D4 with velocity 72
+    delta: 102
+    Note Off (channel 0): D4 with velocity 0
+    delta: 0
+    Note On (channel 0): E4 with velocity 83
+    delta: 256
+    Note Off (channel 0): E4 with velocity 0
+    delta: 0
+    Note On (channel 0): G4 with velocity 87
+    delta: 256
+    Note Off (channel 0): G4 with velocity 0
+    delta: 0
+    Note On (channel 0): G4 with velocity 85
+    delta: 256
+    Note Off (channel 0): G4 with velocity 0
+    delta: 0
+    Note On (channel 0): A4 with velocity 82
+    delta: 256
+    Note Off (channel 0): A4 with velocity 0
+    delta: 0
+    Note On (channel 0): G4 with velocity 78
+    delta: 256
+    Note Off (channel 0): G4 with velocity 0
+    delta: 0
+    Note On (channel 0): E4 with velocity 70
+    delta: 256
+    Note Off (channel 0): E4 with velocity 0
+    delta: 0
+    Note On (channel 0): C4 with velocity 70
+    delta: 256
+    Note Off (channel 0): C4 with velocity 0
+    delta: 0
+    Note On (channel 0): D4 with velocity 85
+    delta: 256
+    Note Off (channel 0): D4 with velocity 0
+    delta: 0
+    Note On (channel 0): E4 with velocity 86
+    delta: 256
+    Note Off (channel 0): E4 with velocity 0
+    delta: 0
+    Note On (channel 0): E4 with velocity 78
+    delta: 256
+    Note Off (channel 0): E4 with velocity 0
+    delta: 0
+    Note On (channel 0): D4 with velocity 76
+    delta: 256
+    Note Off (channel 0): D4 with velocity 0
+    delta: 0
+    Note On (channel 0): D4 with velocity 77
+    delta: 256
+    Note Off (channel 0): D4 with velocity 0
+    delta: 0
+    Note On (channel 0): C4 with velocity 73
+    delta: 768
+    Note Off (channel 0): C4 with velocity 0
+    delta: 1
+    End of Track: 

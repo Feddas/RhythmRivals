@@ -29,11 +29,15 @@ public class MusicalNote
     public float Pitch { get; set; }
     public TimeSpan Offset { get; set; } // offset in time from previous note
 
-    public MusicalNote(Note noteType)
+    public MusicalNote(Note noteType) : this(noteType, 1f)
+    {
+    }
+
+    public MusicalNote(Note noteType, float offsetInSeconds)
     {
         this.Type = noteType;
         this.Pitch = PitchMap[noteType];
         this.GameScalePosition = positionPentatonic[noteType];
-        this.Offset = new TimeSpan((int)(1 * ticksInSecond));
+        this.Offset = new TimeSpan((int)(offsetInSeconds * ticksInSecond));
     }
 }

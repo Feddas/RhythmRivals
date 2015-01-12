@@ -6,8 +6,12 @@ public class Globals : MonoBehaviour
 {
     public Camera MainCamera;
     public UnityEngine.UI.Text DebugText;
+    public UnityEngine.UI.Text ScoreTop;
+    public UnityEngine.UI.Text ScoreBottom;
     public delegate void OrientationChange();
     public static event OrientationChange OnOrientationChange;
+
+    private int noteHitsTop, noteHitsBottom;
     
     public static Globals Instance
     {
@@ -36,5 +40,17 @@ public class Globals : MonoBehaviour
 
     void Update()
     {
+    }
+
+    public void TopScored()
+    {
+        noteHitsTop++;
+        ScoreTop.text = "Score: " + noteHitsTop;
+    }
+
+    public void BottomScored()
+    {
+        noteHitsBottom++;
+        ScoreBottom.text = "Score: " + noteHitsBottom;
     }
 }
