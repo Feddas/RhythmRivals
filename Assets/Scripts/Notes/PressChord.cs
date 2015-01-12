@@ -61,15 +61,3 @@ public class PressChord : MonoBehaviour
         //Debug.Log(text + " played with pitch " + this.audio.pitch);
     }
 }
-
-public enum Note
-{
-    None,
-    C4,
-    D4,
-    E4,
-    // F4,
-    G4,
-    A4,
-    // B4,
-}

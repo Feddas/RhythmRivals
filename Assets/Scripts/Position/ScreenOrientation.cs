@@ -19,7 +19,7 @@ public class ScreenOrientation : MonoBehaviour
         {
             LastAspect = Globals.Instance.MainCamera.aspect;
             Globals.RaiseOrientationChangeEvent();
-            Debug.Log("orientation to " + Screen.orientation.ToString() + " aspect " + Globals.Instance.MainCamera.aspect);
+            //Debug.Log("orientation to " + Screen.orientation.ToString() + " aspect " + Globals.Instance.MainCamera.aspect);
         }
     }
 
@@ -43,7 +43,7 @@ public class ScreenOrientation : MonoBehaviour
         Screen.autorotateToPortrait =
         Screen.autorotateToPortraitUpsideDown = isOrientationLocked == false;
 
-        Debug.Log("RotationLocked " + RotationLocked + " to " + Screen.orientation);
+        //Debug.Log("RotationLocked " + RotationLocked + " to " + Screen.orientation);
     }
 
     UnityEngine.ScreenOrientation currentOrientation()

@@ -326,6 +326,7 @@ GameObject:
   - 136: {fileID: 82634959}
   - 23: {fileID: 82634958}
   - 114: {fileID: 82634962}
+  - 114: {fileID: 82634963}
   m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
@@ -398,6 +399,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PercentX: .699999988
   PercentY: .300000012
+--- !u!114 &82634963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82634957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d8f936dcc1cb8469f1a86996a7f052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &156624631
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +422,7 @@ GameObject:
   - 136: {fileID: 156624634}
   - 23: {fileID: 156624633}
   - 114: {fileID: 156624636}
+  - 114: {fileID: 156624637}
   m_Layer: 0
   m_Name: Center
   m_TagString: Untagged
@@ -482,6 +495,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PercentX: .5
   PercentY: .300000012
+--- !u!114 &156624637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 156624631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d8f936dcc1cb8469f1a86996a7f052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271827321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1173,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 720311290}
+  - 114: {fileID: 720311291}
   m_Layer: 0
   m_Name: NoteTargets
   m_TagString: Untagged
@@ -1175,6 +1200,17 @@ Transform:
   - {fileID: 1493221158}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &720311291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720311289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cef26eb59184d9459a006e1b44161ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &728297976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,6 +1895,7 @@ GameObject:
   - 136: {fileID: 1172095345}
   - 23: {fileID: 1172095344}
   - 114: {fileID: 1172095347}
+  - 114: {fileID: 1172095348}
   m_Layer: 0
   m_Name: LeftFar
   m_TagString: Untagged
@@ -1931,6 +1968,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PercentX: .100000001
   PercentY: .300000012
+--- !u!114 &1172095348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172095342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d8f936dcc1cb8469f1a86996a7f052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1192987512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,6 +1991,7 @@ GameObject:
   - 136: {fileID: 1192987515}
   - 23: {fileID: 1192987514}
   - 114: {fileID: 1192987517}
+  - 114: {fileID: 1192987518}
   m_Layer: 0
   m_Name: RightFar
   m_TagString: Untagged
@@ -2015,6 +2064,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PercentX: .899999976
   PercentY: .300000012
+--- !u!114 &1192987518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192987512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d8f936dcc1cb8469f1a86996a7f052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1215143415
 GameObject:
   m_ObjectHideFlags: 0
@@ -3198,6 +3258,7 @@ GameObject:
   - 136: {fileID: 1963010457}
   - 23: {fileID: 1963010456}
   - 114: {fileID: 1963010459}
+  - 114: {fileID: 1963010460}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -3270,6 +3331,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PercentX: .300000012
   PercentY: .300000012
+--- !u!114 &1963010460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1963010454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d8f936dcc1cb8469f1a86996a7f052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029145322
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ public class FlyBy : MonoBehaviour
     void Update()
     {
         cachedPosition = cachedTransform.position;
-        if (cachedPosition.z > 0)
+        if (cachedPosition.z > -10)
         {
             cachedPosition = new Vector3(cachedPosition.x, cachedPosition.y, cachedPosition.z - Speed * Time.deltaTime);
         }
