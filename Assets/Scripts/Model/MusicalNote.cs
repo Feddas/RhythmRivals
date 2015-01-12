@@ -6,7 +6,7 @@ public class MusicalNote
     private const int ticksInSecond = 10000 * 1000; // 10,000 ticks in millisecond * 1000 milliseconds in a second
 
     // pitch based off of http://answers.unity3d.com/questions/127562/pitch-in-unity.html
-    private Dictionary<Note, float> pitch = new Dictionary<Note, float>()
+    public static Dictionary<Note, float> PitchMap = new Dictionary<Note, float>()
     {
         {Note.C4, 1f},
         {Note.D4, 1.12245549f}, // 1.05946^2
@@ -32,7 +32,7 @@ public class MusicalNote
     public MusicalNote(Note noteType)
     {
         this.Type = noteType;
-        this.Pitch = pitch[noteType];
+        this.Pitch = PitchMap[noteType];
         this.GameScalePosition = positionPentatonic[noteType];
         this.Offset = new TimeSpan((int)(1 * ticksInSecond));
     }

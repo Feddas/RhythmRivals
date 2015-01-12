@@ -29,7 +29,7 @@ public class Globals : MonoBehaviour
     {
         if (instance == null)
             Instance = this;
-        Debug.Log("awake " + Instance.ToString());
+        //Debug.Log("awake " + Instance.ToString());
 
         DebugText.text = "globals connected";
     }

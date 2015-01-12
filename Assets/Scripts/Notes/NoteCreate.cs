@@ -29,6 +29,7 @@ public class NoteCreate : MonoBehaviour
     void instantiateNote(MusicalNote note, float percentX, float percentY)
     {
         var newNote = Instantiate(LeftFarNote) as GameObject;
+        newNote.name = "Note" + note.Type.ToString() + (percentX < 0.5f ? "Bottom" : "Top");
         var position = newNote.GetComponent<PositionPercent>();
         position.PercentX = percentX;
         position.PercentY = percentY;

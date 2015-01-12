@@ -11,6 +11,8 @@ public class FlyBy : MonoBehaviour
     void Start()
     {
         cachedTransform = this.transform;
+
+         this.rigidbody.velocity = new Vector3(0, 0, -Speed);
     }
 
     void Update()
@@ -18,7 +20,8 @@ public class FlyBy : MonoBehaviour
         cachedPosition = cachedTransform.position;
         if (cachedPosition.z > -10)
         {
-            cachedPosition = new Vector3(cachedPosition.x, cachedPosition.y, cachedPosition.z - Speed * Time.deltaTime);
+            // commented out section is alternative to setting this.rigidbody.velocity
+            //cachedPosition = new Vector3(cachedPosition.x, cachedPosition.y, cachedPosition.z - Speed * Time.deltaTime);
         }
         else
         {
