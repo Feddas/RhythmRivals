@@ -17,16 +17,18 @@ public class NoteHit : MonoBehaviour
 
     public void PlayNote()
     {
-        if (colliderNote != null)
+        if (colliderNote != null && this.audio.isPlaying == false)
         {
-            // Debug.Log("collider = " + collider);
-            GameObject.Destroy(colliderNote.gameObject);
+            // lock from double taps
+            Collider temp = colliderNote; // this is for handling double taps, as it's much faster than destroying the object.
             colliderNote = null;
+            GameObject.Destroy(temp.gameObject);
 
             // play note
             this.audio.pitch = MusicalNote.PitchMap[Note];
             this.audio.Play();
 
+            // update score
             if (this.GetComponent<PositionPercent>().PercentY < 0.5f)
             {
                 Globals.Instance.BottomScored();

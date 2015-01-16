@@ -4,6 +4,7 @@ using System.Collections;
 public class NoteCreate : MonoBehaviour
 {
     public GameObject LeftFarNote;
+    public float PositionPercentY;
 
     void Start()
     {
@@ -17,12 +18,16 @@ public class NoteCreate : MonoBehaviour
 
     IEnumerator CreateNoteScore()
     {
+        float positionPercentX;
+
         while (true) // repeat the same song forever
         {
             foreach (var note in NoteParser.GetOhSusanna())
             {
-                instantiateNote(note, note.GameScalePosition, 0.3f); // create the note on the top
-                instantiateNote(note, 1 - note.GameScalePosition, 0.7f); // create the note on the bottom
+                // invert x if on the top
+                positionPercentX = (PositionPercentY < 0.5f) ? note.GameScalePosition : 1 - note.GameScalePosition;
+
+                instantiateNote(note, positionPercentX, PositionPercentY);
                 // Debug.Log("total seconds " + (float)note.Offset.TotalSeconds);
                 yield return new WaitForSeconds((float)note.Offset.TotalSeconds);
             }
